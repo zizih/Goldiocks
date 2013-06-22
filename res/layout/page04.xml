@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_p04"
+        >
+
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p04_fire"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p04_fire_x"
+            android:layout_y="@dimen/p04_fire_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p04_girl"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p04_girl_x"
+            android:layout_y="@dimen/p04_girl_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p04_smoke"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p04_smoke_x"
+            android:layout_y="@dimen/p04_smoke_y"
+            />
+    <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_x="0px"
+            android:layout_y="0px"
+            android:background="@drawable/p04_bkg_up"
+            android:orientation="vertical">
+    </LinearLayout>
+
+</AbsoluteLayout>

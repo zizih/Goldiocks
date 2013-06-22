@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Goldlocks</string>
+    <string name="sp_name">Goldlocks</string>
+
+    <!--about language-->
+    <string name="lang_english">English</string>
+    <string name="lang_franch">Francais</string>
+    <string name="lang_eutsch">Deutsch</string>
+    <string name="lang_espanol">Español</string>
+    <string name="lang_italiano">Italiano</string>
+
+    <!--common gif-->
+    <string name="lang_deu_box">gif/common/lang_deu_box.gif</string>
+    <string name="lang_eng_box">gif/common/lang_eng_box.gif</string>
+    <string name="lang_esp_box">gif/common/lang_esp_box.gif</string>
+    <string name="lang_fra_box">gif/common/lang_fra_box.gif</string>
+    <string name="lang_ita_box">gif/common/lang_ita_box.gif</string>
+    <string name="lang_girl">gif/common/lang_girl.gif</string>
+
+    <string name="menu_girl">gif/common/menu_girl.gif</string>
+    <string name="menu_fa">gif/common/menu_fa.gif</string>
+    <string name="menu_ma_bb">gif/common/menu_ma_bb.gif</string>
+    <string name="p01_flower">gif/common/p01_flower.gif</string>
+    <string name="p01_girl">gif/common/p01_girl.gif</string>
+    <string name="p01_tree">gif/common/p01_tree.gif</string>
+    <string name="p01_door">gif/common/p01_door.gif</string>
+    <string name="p02_flower">gif/common/p02_flower.gif</string>
+    <string name="p02_girl">gif/common/p02_girl.gif</string>
+    <string name="p03_girl">gif/common/p03_girl.gif</string>
+    <string name="p03_sky">gif/common/p03_sky.gif</string>
+    <string name="p04_girl">gif/common/p04_girl.gif</string>
+    <string name="p04_smoke">gif/common/p04_smoke.gif</string>
+    <string name="p04_fire">gif/common/p04_fire.gif</string>
+    <string name="p05_girl">gif/common/p05_girl.gif</string>
+    <string name="p05_smoke">gif/common/p05_smoke.gif</string>
+    <string name="p05_chair">gif/common/p05_chair.gif</string>
+    <string name="p06_girl">gif/common/p06_girl.gif</string>
+    <string name="p06_cabinet">gif/common/p06_cabinet.gif</string>
+    <string name="p07_window">gif/common/p07_window.gif</string>
+    <string name="p07_girl">gif/common/p07_girl.gif</string>
+    <string name="p08_bb">gif/common/p08_bb.gif</string>
+    <string name="p08_bowl">gif/common/p08_bowl.gif</string>
+    <string name="p08_fa">gif/common/p08_fa.gif</string>
+    <string name="p08_fire">gif/common/p08_fire.gif</string>
+    <string name="p08_ma">gif/common/p08_ma.gif</string>
+    <string name="p08_smoke">gif/common/p08_smoke.gif</string>
+    <string name="p09_fa">gif/common/p09_fa.gif</string>
+    <string name="p09_girl">gif/common/p09_girl.gif</string>
+    <string name="p09_ma">gif/common/p09_ma.gif</string>
+    <string name="p09_bb">gif/common/p09_bb.gif</string>
+    <string name="p10_fa">gif/common/p10_fa.gif</string>
+    <string name="p10_ma">gif/common/p10_ma.gif</string>
+    <string name="p10_bb">gif/common/p10_bb.gif</string>
+    <string name="p10_girl">gif/common/p10_girl.gif</string>
+    <string name="p11_girl">gif/common/p11_girl.gif</string>
+    <string name="p11_butterfly">gif/common/p11_butterfly.gif</string>
+    <string name="p11_sky_cloud">gif/common/p11_sky_cloud.gif</string>
+    <string name="p12_girl">gif/common/p12_girl.gif</string>
+    <string name="p12_flower">gif/common/p12_flower.gif</string>
+    <string name="p12_btn_menu">gif/common/p12_btn_menu.gif</string>
+    <string name="p12_btn_quit">gif/common/p12_btn_quit.gif</string>
+
+
+    <!--about button-->
+    <string name="gif_lang_eng">gif/eng/</string>
+    <string name="gif_lang_fra">gif/fra/</string>
+    <string name="gif_lang_deu">gif/deu/</string>
+    <string name="gif_lang_esp">gif/esp/</string>
+    <string name="gif_lang_ita">gif/ita/</string>
+    <string name="gif_lang_default">gif/eng/</string>
+
+    <string name="menu_read_auto">menu_read_auto.gif</string>
+    <string name="menu_read_self">menu_read_self.gif</string>
+
+    <string name="p12_menu">p12_menu.gif</string>
+    <string name="p12_quit">p12_quit.gif</string>
+
+    <!--about sound-->
+    <string name="mp3_lang_eng">mp3/eng/</string>
+    <string name="mp3_lang_fra">mp3/fra/</string>
+    <string name="mp3_lang_deu">mp3/deu/</string>
+    <string name="mp3_lang_esp">mp3/esp/</string>
+    <string name="mp3_lang_ita">mp3/ita/</string>
+    <string name="mp3_lang_default">mp3/eng/</string>
+
+    <string name="mp3_lang">lang.mp3</string>
+    <string name="mp3_menu_auto">menu_auto.mp3</string>
+    <string name="mp3_menu_self">menu_self.mp3</string>
+    <string name="mp3_p01">page01.mp3</string>
+    <string name="mp3_p02">page02.mp3</string>
+    <string name="mp3_p03">page03.mp3</string>
+    <string name="mp3_p04">page04.mp3</string>
+    <string name="mp3_p05">page05.mp3</string>
+    <string name="mp3_p06">page06.mp3</string>
+    <string name="mp3_p07">page07.mp3</string>
+    <string name="mp3_p08">page08.mp3</string>
+    <string name="mp3_p09">page09.mp3</string>
+    <string name="mp3_p10">page10.mp3</string>
+    <string name="mp3_p11">page11.mp3</string>
+    <string name="mp3_p12">page12.mp3</string>
+    <string name="mp3_splash">splash.mp3</string>
+
+</resources>

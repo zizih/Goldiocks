@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_menu"
+                android:background="@drawable/menu_bkg"
+        >
+
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_menu_fa"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/menu_fa_x"
+            android:layout_y="@dimen/menu_fa_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.MenuRedGif
+            android:id="@+id/gif_menu_girl"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/menu_girl_x"
+            android:layout_y="@dimen/menu_girl_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_menu_ma_bb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/menu_ma_bb_x"
+            android:layout_y="@dimen/menu_ma_bb_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_menu_read_auto"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/menu_read_auto_x"
+            android:layout_y="@dimen/menu_read_auto_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_menu_read_self"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/menu_read_self_x"
+            android:layout_y="@dimen/menu_read_self_y"
+            />
+
+</AbsoluteLayout>

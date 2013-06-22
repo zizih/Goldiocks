@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_p01"
+        >
+
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p01_door"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p01_door_x"
+            android:layout_y="@dimen/p01_door_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p01_flower"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p01_flower_x"
+            android:layout_y="@dimen/p01_flower_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p01_girl"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p01_girl_x"
+            android:layout_y="@dimen/p01_girl_y"
+            />
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p01_tree"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_x="@dimen/p01_tree_x"
+            android:layout_y="@dimen/p01_tree_y"
+            />
+
+</AbsoluteLayout>

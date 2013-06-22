@@ -1,0 +1,122 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="lang_box_width">213px</dimen>
+    <dimen name="lang_box_height">70px</dimen>
+
+    <dimen name="lang_eng_x">135px</dimen>
+    <dimen name="lang_eng_y">79px</dimen>
+    <dimen name="lang_fra_x">135px</dimen>
+    <dimen name="lang_fra_y">179px</dimen>
+    <dimen name="lang_deu_x">135px</dimen>
+    <dimen name="lang_deu_y">279px</dimen>
+    <dimen name="lang_esp_x">447px</dimen>
+    <dimen name="lang_esp_y">78px</dimen>
+    <dimen name="lang_ita_x">448px</dimen>
+    <dimen name="lang_ita_y">175px</dimen>
+    <dimen name="lang_girl_x">516px</dimen>
+    <dimen name="lang_girl_y">250px</dimen>
+
+    <dimen name="menu_read_auto_x">115px</dimen>
+    <dimen name="menu_read_auto_y">292px</dimen>
+    <dimen name="menu_read_self_x">433px</dimen>
+    <dimen name="menu_read_self_y">292px</dimen>
+    <dimen name="menu_girl_x">302px</dimen>
+    <dimen name="menu_girl_y">70px</dimen>
+    <dimen name="menu_fa_x">140px</dimen>
+    <dimen name="menu_fa_y">73px</dimen>
+    <dimen name="menu_ma_bb_x">517px</dimen>
+    <dimen name="menu_ma_bb_y">93px</dimen>
+
+    <!--gif of pages-->
+    <dimen name="p01_flower_x">651px</dimen>
+    <dimen name="p01_flower_y">388px</dimen>
+    <dimen name="p01_girl_x">237px</dimen>
+    <dimen name="p01_girl_y">207px</dimen>
+    <dimen name="p01_tree_x">457px</dimen>
+    <dimen name="p01_tree_y">188px</dimen>
+    <dimen name="p01_door_x">29px</dimen>
+    <dimen name="p01_door_y">215px</dimen>
+
+    <dimen name="p02_flower_x">122px</dimen>
+    <dimen name="p02_flower_y">216px</dimen>
+    <dimen name="p02_girl_x">285px</dimen>
+    <dimen name="p02_girl_y">181px</dimen>
+
+    <dimen name="p03_girl_x">296px</dimen>
+    <dimen name="p03_girl_y">224px</dimen>
+    <dimen name="p03_sky_x">0px</dimen>
+    <dimen name="p03_sky_y">0px</dimen>
+
+    <dimen name="p04_girl_x">178px</dimen>
+    <dimen name="p04_girl_y">154px</dimen>
+    <dimen name="p04_smoke_x">130px</dimen>
+    <dimen name="p04_smoke_y">253px</dimen>
+    <dimen name="p04_fire_x">611px</dimen>
+    <dimen name="p04_fire_y">184px</dimen>
+
+    <dimen name="p05_girl_x">427px</dimen>
+    <dimen name="p05_girl_y">218px</dimen>
+    <dimen name="p05_smoke_x">144px</dimen>
+    <dimen name="p05_smoke_y">260px</dimen>
+    <dimen name="p05_chair_x">620px</dimen>
+    <dimen name="p05_chair_y">300px</dimen>
+
+    <dimen name="p06_girl_x">141px</dimen>
+    <dimen name="p06_girl_y">208px</dimen>
+    <dimen name="p06_cabinet_x">631px</dimen>
+    <dimen name="p06_cabinet_y">193px</dimen>
+
+    <dimen name="p07_window_x">544px</dimen>
+    <dimen name="p07_window_y">29px</dimen>
+    <dimen name="p07_girl_x">558px</dimen>
+    <dimen name="p07_girl_y">299px</dimen>
+
+    <dimen name="p08_bb_x">481px</dimen>
+    <dimen name="p08_bb_y">310px</dimen>
+    <dimen name="p08_bowl_x">436px</dimen>
+    <dimen name="p08_bowl_y">363px</dimen>
+    <dimen name="p08_fa_x">39px</dimen>
+    <dimen name="p08_fa_y">180px</dimen>
+    <dimen name="p08_fire_x">656px</dimen>
+    <dimen name="p08_fire_y">185px</dimen>
+    <dimen name="p08_ma_x">253px</dimen>
+    <dimen name="p08_ma_y">230px</dimen>
+    <dimen name="p08_smoke_x">147px</dimen>
+    <dimen name="p08_smoke_y">280px</dimen>
+
+    <dimen name="p09_fa_x">54px</dimen>
+    <dimen name="p09_fa_y">237px</dimen>
+    <dimen name="p09_girl_x">562px</dimen>
+    <dimen name="p09_girl_y">272px</dimen>
+    <dimen name="p09_ma_x">307px</dimen>
+    <dimen name="p09_ma_y">278px</dimen>
+    <dimen name="p09_bb_x">531px</dimen>
+    <dimen name="p09_bb_y">367px</dimen>
+
+    <dimen name="p10_fa_x">0px</dimen>
+    <dimen name="p10_fa_y">217px</dimen>
+    <dimen name="p10_ma_x">251px</dimen>
+    <dimen name="p10_ma_y">283px</dimen>
+    <dimen name="p10_bb_x">336px</dimen>
+    <dimen name="p10_bb_y">360px</dimen>
+    <dimen name="p10_girl_x">533px</dimen>
+    <dimen name="p10_girl_y">278px</dimen>
+
+    <dimen name="p11_girl_x">185px</dimen>
+    <dimen name="p11_girl_y">160px</dimen>
+    <dimen name="p11_butterfly_x">389px</dimen>
+    <dimen name="p11_butterfly_y">161px</dimen>
+    <dimen name="p11_sky_cloud_x">94px</dimen>
+    <dimen name="p11_sky_cloud_y">0px</dimen>
+
+    <dimen name="p12_girl_x">291px</dimen>
+    <dimen name="p12_girl_y">183px</dimen>
+    <dimen name="p12_flower_x">0px</dimen>
+    <dimen name="p12_flower_y">0px</dimen>
+
+    <dimen name="p12_btn_menu_x">113px</dimen>
+    <dimen name="p12_btn_menu_y">393px</dimen>
+    <dimen name="p12_btn_quit_x">491px</dimen>
+    <dimen name="p12_btn_quit_y">393px</dimen>
+
+</resources>
