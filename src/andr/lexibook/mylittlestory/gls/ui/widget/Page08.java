@@ -21,6 +21,8 @@ public class Page08 extends PageView {
     private GifMovieView ma;
     private GifMovieView smoke;
 
+    private AbsoluteLayout p08_bg_up;
+
     public Page08(Context context) {
         super(context, R.layout.page08);
 
@@ -30,6 +32,7 @@ public class Page08 extends PageView {
         fire = (GifMovieView) page.findViewById(R.id.gif_p08_fire);
         ma = (GifMovieView) page.findViewById(R.id.gif_p08_ma);
         smoke = (GifMovieView) page.findViewById(R.id.gif_p08_smoke);
+        p08_bg_up = (AbsoluteLayout) page.findViewById(R.id.p08_bg_up);
 
         bb.setMovieAsset(ctx.getString(R.string.p08_bb));
         bowl.setMovieAsset(ctx.getString(R.string.p08_bowl));
@@ -38,36 +41,35 @@ public class Page08 extends PageView {
         ma.setMovieAsset(ctx.getString(R.string.p08_ma));
         smoke.setMovieAsset(ctx.getString(R.string.p08_smoke));
 
-        params = (AbsoluteLayout.LayoutParams) bb.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_bb_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_bb_y));
-        bb.setLayoutParams(params);
+        //dynamic
+        params = (AbsoluteLayout.LayoutParams) p08_bg_up.getLayoutParams();
+        params.width = (int) getWinWidth();
+        params.height = (int) getWinHeight();
+        p08_bg_up.setLayoutParams(params);
 
-        params = (AbsoluteLayout.LayoutParams) bowl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_bowl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_bowl_y));
-
-        params = (AbsoluteLayout.LayoutParams) fa.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_fa_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_fa_y));
-        fa.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) fire.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_fire_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_fire_y));
-        fire.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) ma.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_ma_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_ma_y));
-        ma.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) smoke.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p08_smoke_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p08_smoke_y));
-        smoke.setLayoutParams(params);
-
-        layout = page.findViewById(R.id.layout_p08);
+        layout = (AbsoluteLayout) page.findViewById(R.id.layout_p08);
         layout.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getPageDrawable(7));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        bb.Clear();
+        bowl.Clear();
+        fire.Clear();
+        fa.Clear();
+        ma.Clear();
+        smoke.Clear();
     }
 }

@@ -2,6 +2,7 @@ package andr.lexibook.mylittlestory.gls.ui.ViewIml;
 
 import andr.lexibook.mylittlestory.gls.control.BgSrc;
 import andr.lexibook.mylittlestory.gls.control.Setting;
+import andr.lexibook.mylittlestory.gls.ui.R;
 import andr.lexibook.mylittlestory.gls.util.ViewUtil;
 import android.app.Activity;
 import android.content.Context;
@@ -18,7 +19,8 @@ public class PageView extends View {
 
     protected static Activity ctx;
     public AbsoluteLayout page;
-    public View layout;
+    public AbsoluteLayout layout;
+    public AbsoluteLayout pause;
     public AbsoluteLayout.LayoutParams params;
     public BgSrc bgSrc;
     public Setting setting;
@@ -37,7 +39,7 @@ public class PageView extends View {
         return page;
     }
 
-    public View getLayoutView() {
+    public AbsoluteLayout getLayoutView() {
         return layout;
     }
 
@@ -59,6 +61,9 @@ public class PageView extends View {
 
     public float getWinHeight() {
         return ViewUtil.getInstance(ctx).getWinHeight();
+    }
+
+    public void Clear() {
     }
 
 }

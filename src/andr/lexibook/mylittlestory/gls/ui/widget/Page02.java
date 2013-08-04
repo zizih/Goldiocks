@@ -1,8 +1,8 @@
 package andr.lexibook.mylittlestory.gls.ui.widget;
 
+import andr.lexibook.mylittlestory.gls.ui.R;
 import andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView;
 import andr.lexibook.mylittlestory.gls.ui.ViewIml.PageView;
-import andr.lexibook.mylittlestory.gls.ui.R;
 import android.content.Context;
 import android.widget.AbsoluteLayout;
 
@@ -30,16 +30,22 @@ public class Page02 extends PageView {
         flower.setMovieAsset(ctx.getString(R.string.p02_flower));
         girl.setMovieAsset(ctx.getString(R.string.p02_girl));
 
-        //dynamic
-        params = (AbsoluteLayout.LayoutParams) flower.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_flower_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_flower_y));
-        flower.setLayoutParams(params);
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
+    }
 
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p02_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p02_girl_y));
-        girl.setLayoutParams(params);
-
+    @Override
+    public void Clear() {
+        super.Clear();
+        flower.Clear();
+        girl.Clear();
     }
 }

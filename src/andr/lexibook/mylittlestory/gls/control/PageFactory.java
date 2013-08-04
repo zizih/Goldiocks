@@ -78,25 +78,11 @@ public class PageFactory {
 
         //dialog
         MyProgressDialog dialog = new MyProgressDialog(ctx, pageIndex);
-        dialog.setMessage("loading...");
         dialog.show();
 
         //after
         Setting.getInstance(ctx).setOOM(false);
         callback.autoFlip();
-    }
-
-    public boolean newPage(int position) {
-        try {
-            pages.put(pagesKey[position], new WeakReference<PageView>((PageView) pagesMap.get(pagesKey[position]).getConstructors()[0].newInstance(ctx)));
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-        return pages.get(pagesKey[position]) != null;
     }
 
     public void removePage(int postion) {

@@ -28,22 +28,31 @@ public class Page11 extends PageView {
         girl.setMovieAsset(ctx.getString(R.string.p11_girl));
         sky_cloud.setMovieAsset(ctx.getString(R.string.p11_sky_cloud));
 
-        params = (AbsoluteLayout.LayoutParams) butterfly.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p11_butterfly_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p11_butterfly_y));
-        butterfly.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p11_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p11_girl_y));
-        girl.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) sky_cloud.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p11_sky_cloud_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p11_sky_cloud_y));
-        sky_cloud.setLayoutParams(params);
-
-        layout = page.findViewById(R.id.ll_p11_bg);
+        layout = (AbsoluteLayout) page.findViewById(R.id.ll_p11_bg);
+        //dynamic
+        params = (AbsoluteLayout.LayoutParams) layout.getLayoutParams();
+        params.width = (int) getWinWidth();
+        params.height = (int) getWinHeight();
+        layout.setLayoutParams(params);
         layout.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getPageDrawable(10));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        butterfly.Clear();
+        sky_cloud.Clear();
+        girl.Clear();
     }
 }

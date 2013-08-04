@@ -25,15 +25,11 @@
             android:id="@+id/gif_p12_flower"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p12_flower_x"
-            android:layout_y="@dimen/p12_flower_y"
             />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p12_girl"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p12_girl_x"
-            android:layout_y="@dimen/p12_girl_y"
             />
 
 </AbsoluteLayout>

@@ -41,16 +41,6 @@ public class Page12 extends PageView implements View.OnClickListener {
         flower.setMovieAsset(ctx.getString(R.string.p12_flower));
         girl.setMovieAsset(ctx.getString(R.string.p12_girl));
 
-        params = (AbsoluteLayout.LayoutParams) flower.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_flower_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_flower_y));
-        flower.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_girl_y));
-        girl.setLayoutParams(params);
-
         params = (AbsoluteLayout.LayoutParams) btn_menu.getLayoutParams();
         params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_btn_menu_x));
         params.y = (int) (getHeightScale() * getDimens(R.dimen.p12_btn_menu_y));

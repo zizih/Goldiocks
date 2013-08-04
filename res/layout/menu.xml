@@ -5,29 +5,26 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/layout_menu"
-                android:background="@drawable/menu_bkg"
-        >
+                android:background="@drawable/menu_bkg">
+
+    <View android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:id="@+id/any_widget_4_menu"/>
 
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_menu_fa"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/menu_fa_x"
-            android:layout_y="@dimen/menu_fa_y"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
             />
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.MenuRedGif
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.MenuGirlGif
             android:id="@+id/gif_menu_girl"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/menu_girl_x"
-            android:layout_y="@dimen/menu_girl_y"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
             />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_menu_ma_bb"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_x="@dimen/menu_ma_bb_x"
-            android:layout_y="@dimen/menu_ma_bb_y"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
             />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_menu_read_auto"

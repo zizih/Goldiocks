@@ -28,22 +28,26 @@ public class Page05 extends PageView {
         girl.setMovieAsset(ctx.getString(R.string.p05_girl));
         smoke.setMovieAsset(ctx.getString(R.string.p05_smoke));
 
-        params = (AbsoluteLayout.LayoutParams) chair.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p05_chair_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p05_chair_y));
-        chair.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p05_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p05_girl_y));
-        girl.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) smoke.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p05_smoke_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p05_smoke_y));
-        smoke.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p05);
         layout.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getPageDrawable(4));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        chair.Clear();
+        girl.Clear();
+        smoke.Clear();
     }
 }

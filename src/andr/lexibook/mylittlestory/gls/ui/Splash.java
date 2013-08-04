@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -25,6 +24,7 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         btn_splash_bg = (Button) findViewById(R.id.btn_splash_bg);
         btn_splash_bg.setOnClickListener(this);
         refreshBg();
+        setMenuView(findViewById(R.id.any_widget_4_menu_splash));
 
         mPlayer = mediaFactory.getSplash();
         try {
@@ -41,7 +41,6 @@ public class Splash extends BaseActivity implements View.OnClickListener {
                     toMenu();
             }
         }, 3000);
-
     }
 
     @Override
@@ -63,7 +62,6 @@ public class Splash extends BaseActivity implements View.OnClickListener {
         } else {
             toPage(Menu.class);
         }
-        finish();
     }
 
     @Override
@@ -73,8 +71,7 @@ public class Splash extends BaseActivity implements View.OnClickListener {
     }
 
     private void refreshBg() {
-        Toast.makeText(this, "no splash image ..", 1000).show();
-        //this.btn_splash_bg.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getSplashDrawable());
+        this.btn_splash_bg.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getSplashDrawable());
     }
 
 }

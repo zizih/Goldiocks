@@ -72,33 +72,32 @@ public class BgSrc {
     };
 
     private int[] esps = {R.drawable.p01_esp
-            , R.drawable.p02_esp
-            , R.drawable.p03_esp
-            , R.drawable.p04_esp
-            , R.drawable.p05_esp
-            , R.drawable.p06_esp
-            , R.drawable.p07_esp
-            , R.drawable.p08_esp
-            , R.drawable.p09_esp
-            , R.drawable.p10_esp
-            , R.drawable.p11_esp
-            , R.drawable.p12_esp
+            ,R.drawable.p02_esp
+            ,R.drawable.p03_esp
+            ,R.drawable.p04_esp
+            ,R.drawable.p05_esp
+            ,R.drawable.p06_esp
+            ,R.drawable.p07_esp
+            ,R.drawable.p08_esp
+            ,R.drawable.p09_esp
+            ,R.drawable.p10_esp
+            ,R.drawable.p11_esp
+            ,R.drawable.p12_esp
     };
 
     private int[] itas = {R.drawable.p01_ita
-            , R.drawable.p02_ita
-            , R.drawable.p03_ita
-            , R.drawable.p04_ita
-            , R.drawable.p05_ita
-            , R.drawable.p06_ita
-            , R.drawable.p07_ita
-            , R.drawable.p08_ita
-            , R.drawable.p09_ita
-            , R.drawable.p10_ita
-            , R.drawable.p11_ita
-            , R.drawable.p12_ita
+            ,R.drawable.p02_ita
+            ,R.drawable.p03_ita
+            ,R.drawable.p04_ita
+            ,R.drawable.p05_ita
+            ,R.drawable.p06_ita
+            ,R.drawable.p07_ita
+            ,R.drawable.p08_ita
+            ,R.drawable.p09_ita
+            ,R.drawable.p10_ita
+            ,R.drawable.p11_ita
+            ,R.drawable.p12_ita
     };
-
 
     private int[][] langPagesId = {engs, fras, deus, esps, itas};
 
@@ -165,5 +164,23 @@ public class BgSrc {
         drawableCache.clear();
         System.gc();
         System.gc();
+    }
+
+
+    private Drawable play;
+    private Drawable pause;
+
+    public Drawable getPlayDrawable() {
+        if (play == null) {
+            play = ctx.getResources().getDrawable(R.drawable.gdl_play);
+        }
+        return play;
+    }
+
+    public Drawable getPauseDrawable() {
+        if (pause == null) {
+            pause = ctx.getResources().getDrawable(R.drawable.gdl_pasue);
+        }
+        return pause;
     }
 }

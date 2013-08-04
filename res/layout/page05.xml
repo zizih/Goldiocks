@@ -11,21 +11,23 @@
             android:id="@+id/gif_p05_chair"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p05_chair_x"
-            android:layout_y="@dimen/p05_chair_y"
             />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p05_girl"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p05_girl_x"
-            android:layout_y="@dimen/p05_girl_y"
             />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p05_smoke"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p05_smoke_x"
-            android:layout_y="@dimen/p05_smoke_y"
             />
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/gdl_pasue"
+            android:layout_x="@dimen/btn_play_pause_x"
+            android:layout_y="@dimen/btn_play_pause_y"
+            android:visibility="gone"></AbsoluteLayout>
 </AbsoluteLayout>

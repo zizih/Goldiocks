@@ -28,25 +28,22 @@ public class Page07 extends PageView {
         window.setMovieAsset(ctx.getString(R.string.p07_window));
         girl.setMovieAsset(ctx.getString(R.string.p07_girl));
 
-        //dynamic
-        params = (AbsoluteLayout.LayoutParams) window.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_window_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_window_y));
-        window.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p07_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p07_girl_y));
-        girl.setLayoutParams(params);
-
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
     }
 
-    public GifMovieView getWindow() {
-        if (window.getParent() != null)
-            ((AbsoluteLayout) window.getParent()).removeView(window);
-        window.setPaused(4000);
-        window.invalidate();
-        return window;
+    @Override
+    public void Clear() {
+        super.Clear();
+        window.Clear();
+        girl.Clear();
     }
-
 }

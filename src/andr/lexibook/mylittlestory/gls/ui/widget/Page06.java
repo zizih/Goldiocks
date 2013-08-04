@@ -26,17 +26,25 @@ public class Page06 extends PageView {
         cabinet.setMovieAsset(ctx.getString(R.string.p06_cabinet));
         girl.setMovieAsset(ctx.getString(R.string.p06_girl));
 
-        params = (AbsoluteLayout.LayoutParams) cabinet.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p06_cabinet_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p06_cabinet_y));
-        cabinet.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p06_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p06_girl_y));
-        girl.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p06);
         layout.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getPageDrawable(5));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        cabinet.Clear();
+        girl.Clear();
     }
 }

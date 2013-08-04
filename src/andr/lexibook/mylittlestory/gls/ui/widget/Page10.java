@@ -31,27 +31,27 @@ public class Page10 extends PageView {
         girl.setMovieAsset(ctx.getString(R.string.p10_girl));
         ma.setMovieAsset(ctx.getString(R.string.p10_ma));
 
-        params = (AbsoluteLayout.LayoutParams) bb.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p10_bb_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p10_bb_y));
-        bb.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) fa.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p10_fa_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p10_fa_y));
-        fa.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) girl.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p10_girl_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p10_girl_y));
-        girl.setLayoutParams(params);
-
-        params = (AbsoluteLayout.LayoutParams) ma.getLayoutParams();
-        params.x = (int) (getWidthScale() * getDimens(R.dimen.p10_ma_x));
-        params.y = (int) (getHeightScale() * getDimens(R.dimen.p10_ma_y));
-        ma.setLayoutParams(params);
-
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p10);
         layout.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getPageDrawable(9));
+
+        if (setting.isAuto()) {
+            pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);
+            pause.setVisibility(VISIBLE);
+            params = (AbsoluteLayout.LayoutParams) pause.getLayoutParams();
+            params.x = (int) (getWidthScale() * getDimens(R.dimen.btn_play_pause_x));
+            params.y = (int) (getHeightScale() * getDimens(R.dimen.btn_play_pause_y));
+            params.width = (int) (getWidthScale() * 45);
+            params.height = (int) (getWidthScale() * 45);
+            pause.setLayoutParams(params);
+        }
+    }
+
+    @Override
+    public void Clear() {
+        super.Clear();
+        bb.Clear();
+        fa.Clear();
+        girl.Clear();
+        ma.Clear();
     }
 }

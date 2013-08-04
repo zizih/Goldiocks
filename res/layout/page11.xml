@@ -11,31 +11,32 @@
             android:id="@+id/gif_p11_sky_cloud"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p11_sky_cloud_x"
-            android:layout_y="@dimen/p11_sky_cloud_y"
             />
 
-    <LinearLayout
+    <AbsoluteLayout
             android:id="@+id/ll_p11_bg"
             android:layout_height="fill_parent"
             android:layout_width="fill_parent"
-            android:layout_x="0px"
-            android:layout_y="0px"
             android:orientation="vertical">
-    </LinearLayout>
+    </AbsoluteLayout>
 
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p11_butterfly"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p11_butterfly_x"
-            android:layout_y="@dimen/p11_butterfly_y"
             />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p11_girl"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_x="@dimen/p11_girl_x"
-            android:layout_y="@dimen/p11_girl_y"
             />
+
+    <AbsoluteLayout
+            android:id="@+id/al_pause"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/gdl_pasue"
+            android:layout_x="@dimen/btn_play_pause_x"
+            android:layout_y="@dimen/btn_play_pause_y"
+            android:visibility="gone"></AbsoluteLayout>
 </AbsoluteLayout>

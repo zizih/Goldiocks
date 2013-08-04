@@ -119,4 +119,7 @@
     <dimen name="p12_btn_quit_x">491px</dimen>
     <dimen name="p12_btn_quit_y">393px</dimen>
 
+    <dimen name="btn_play_pause_x">678px</dimen>
+    <dimen name="btn_play_pause_y">417px</dimen>
+
 </resources>

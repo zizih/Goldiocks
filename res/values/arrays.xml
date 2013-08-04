@@ -9,6 +9,37 @@
         <item>Italiano</item>
     </string-array>
 
+    <integer-array name="lang_eng_location">
+        <item>135</item>
+        <item>79</item>
+        <item>343</item>
+        <item>145</item>
+    </integer-array>
+    <integer-array name="lang_fra_location">
+        <item>135</item>
+        <item>179</item>
+        <item>343</item>
+        <item>245</item>
+    </integer-array>
+    <integer-array name="lang_deu_location">
+        <item>135</item>
+        <item>279</item>
+        <item>343</item>
+        <item>345</item>
+    </integer-array>
+    <integer-array name="lang_esp_location">
+        <item>447</item>
+        <item>78</item>
+        <item>655</item>
+        <item>144</item>
+    </integer-array>
+    <integer-array name="lang_ita_location">
+        <item>448</item>
+        <item>175</item>
+        <item>656</item>
+        <item>241</item>
+    </integer-array>
+
     <string-array name="page_index">
         <item>page01</item>
         <item>page02</item>
@@ -24,20 +55,23 @@
         <item>page12</item>
     </string-array>
 
-    <string-array name="wav_eng">
-         <item>lang</item>
-         <item>splash</item>
-        <item>page01</item>
-        <item>page02</item>
-        <item>page03</item>
-        <item>page04</item>
-        <item>page05</item>
-        <item>page06</item>
-        <item>page07</item>
-        <item>page08</item>
-        <item>page09</item>
-        <item>page10</item>
-        <item>page11</item>
-        <item>page12</item>
-    </string-array>
+    <integer-array name="btn_play_pause">
+        <item>677</item>
+        <item>418</item>
+        <item>723</item>
+        <item>464</item>
+    </integer-array>
+
+    <integer-array name="p12_btn_menu_location">
+        <item>115</item>
+        <item>395</item>
+        <item>286</item>
+        <item>453</item>
+    </integer-array>
+    <integer-array name="p12_btn_quit_location">
+        <item>492</item>
+        <item>394</item>
+        <item>664</item>
+        <item>454</item>
+    </integer-array>
 </resources>
