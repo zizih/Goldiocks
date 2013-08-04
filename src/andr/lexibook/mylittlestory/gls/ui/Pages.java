@@ -58,7 +58,6 @@ public class Pages extends BaseActivity implements PageFactory.Callback, FlipVie
         flipView.setPlayPauseCallBack(this);
         flipAdapter = new FlipAdapter(this);
         flipView.setAdapter(flipAdapter);
-        flipAdapter.notifyDataSetChanged();
         al_pages.addView(flipView);
 
 //        setting.setAuto(false);
