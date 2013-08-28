@@ -21,6 +21,7 @@ public class Page12 extends PageView implements View.OnClickListener {
     private GifMovieView btn_quit;
     private GifMovieView flower;
     private GifMovieView girl;
+    private GifMovieView sky;
     private Intent menuIntent;
     public BtnGifSrc btnSrc;
 
@@ -32,6 +33,7 @@ public class Page12 extends PageView implements View.OnClickListener {
 
         flower = (GifMovieView) page.findViewById(R.id.gif_p12_flower);
         girl = (GifMovieView) page.findViewById(R.id.gif_p12_girl);
+        sky = (GifMovieView) page.findViewById(R.id.gif_p12_sky);
         btn_menu = (GifMovieView) page.findViewById(R.id.gif_p12_btn_menu);
         btn_quit = (GifMovieView) page.findViewById(R.id.gif_p12_btn_quit);
 
@@ -40,6 +42,7 @@ public class Page12 extends PageView implements View.OnClickListener {
         btn_quit.setMovieAsset(btnSrc.setLang(setting.getLangId()).getQuit());
         flower.setMovieAsset(ctx.getString(R.string.p12_flower));
         girl.setMovieAsset(ctx.getString(R.string.p12_girl));
+        sky.setMovieAsset(ctx.getString(R.string.p12_sky));
 
         params = (AbsoluteLayout.LayoutParams) btn_menu.getLayoutParams();
         params.x = (int) (getWidthScale() * getDimens(R.dimen.p12_btn_menu_x));

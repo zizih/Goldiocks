@@ -7,6 +7,13 @@
                 android:id="@+id/layout_p11"
                 android:background="@drawable/p11_sky"
         >
+
+    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
+            android:id="@+id/gif_p11_butterfly"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p11_sky_cloud"
             android:layout_height="wrap_content"
@@ -20,11 +27,6 @@
             android:orientation="vertical">
     </AbsoluteLayout>
 
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_p11_butterfly"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            />
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
             android:id="@+id/gif_p11_girl"
             android:layout_height="wrap_content"

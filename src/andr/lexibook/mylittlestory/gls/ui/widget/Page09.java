@@ -17,6 +17,7 @@ public class Page09 extends PageView {
     private GifMovieView fa;
     private GifMovieView girl;
     private GifMovieView ma;
+    private AbsoluteLayout bb;
 
     public Page09(Context context) {
         super(context, R.layout.page09);
@@ -24,6 +25,7 @@ public class Page09 extends PageView {
         fa = (GifMovieView) page.findViewById(R.id.gif_p09_fa);
         girl = (GifMovieView) page.findViewById(R.id.gif_p09_girl);
         ma = (GifMovieView) page.findViewById(R.id.gif_p09_ma);
+        bb = (AbsoluteLayout) page.findViewById(R.id.al_bb);
 
         fa.setMovieAsset(ctx.getString(R.string.p09_fa));
         girl.setMovieAsset(ctx.getString(R.string.p09_girl));
@@ -31,6 +33,13 @@ public class Page09 extends PageView {
 
         layout = (AbsoluteLayout) page.findViewById(R.id.layout_p09);
         layout.setBackgroundDrawable(bgSrc.setLang(setting.getLangId()).getPageDrawable(8));
+
+        //dynamic
+        params = (AbsoluteLayout.LayoutParams) bb.getLayoutParams();
+        params.width = (int) getWinWidth();
+        params.height = (int) getWinHeight();
+        bb.setLayoutParams(params);
+
 
         if (setting.isAuto()) {
             pause = (AbsoluteLayout) page.findViewById(R.id.al_pause);

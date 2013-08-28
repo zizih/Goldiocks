@@ -254,6 +254,13 @@ public class Pages extends BaseActivity implements PageFactory.Callback, FlipVie
             isPaused = false;
             isPrepared = false;
 
+            if ((position >= 0 && position < 11)) {
+                params.x = (int) (getWidthScale() * getResources().getDimension(R.dimen.btn_play_pause_x));
+                params.y = (int) (getHeightScale() * getResources().getDimension(R.dimen.btn_play_pause_y));
+                params.width = (int) (getWidthScale() * 45);
+                params.height = (int) (getWidthScale() * 45);
+            }
+
             /**
              * about slowwer
              */

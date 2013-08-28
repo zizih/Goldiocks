@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Goldlocks</string>
-    <string name="sp_name">Goldlocks</string>
+    <string name="app_name">Goldilocks</string>
+    <string name="sp_name">Goldilocks</string>
 
     <!--about language-->
     <string name="lang_english">English</string>
@@ -9,6 +9,12 @@
     <string name="lang_eutsch">Deutsch</string>
     <string name="lang_espanol">Español</string>
     <string name="lang_italiano">Italiano</string>
+
+    <string name="app_english"></string>
+    <string name="app_franch"></string>
+    <string name="app_eutsch"></string>
+    <string name="app_espanol"></string>
+    <string name="app_italiano"></string>
 
     <!--common gif-->
     <string name="lang_deu_box">gif/common/lang_deu_box.gif</string>
@@ -58,6 +64,7 @@
     <string name="p11_sky_cloud">gif/common/p11_sky_cloud.gif</string>
     <string name="p12_girl">gif/common/p12_girl.gif</string>
     <string name="p12_flower">gif/common/p12_flower.gif</string>
+    <string name="p12_sky">gif/common/p12_sky.gif</string>
     <string name="p12_btn_menu">gif/common/p12_btn_menu.gif</string>
     <string name="p12_btn_quit">gif/common/p12_btn_quit.gif</string>
 
