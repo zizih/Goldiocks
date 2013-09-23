@@ -164,7 +164,7 @@ public class Pages extends BaseActivity implements PageFactory.Callback, FlipVie
     @Override
     public void setLanguage(int langId) {
         super.setLanguage(langId);
-        if (setting.getReadMode().isAuto()) {
+        if (setting.isAuto()) {
             mPlayer.release();
             langPlayer.setOnCompletionListener(langCompleteListener);
         }
