@@ -136,7 +136,7 @@ public class Pages extends BaseActivity implements PageFactory.Callback, FlipVie
 
     @Override
     public void onFliped(View view) {
-        if (preView != null) {
+        if (setting.isAuto() && preView != null) {
             if (ll_play.getParent() != null)
                 ((AbsoluteLayout) ll_play.getParent()).removeView(ll_play);
         }
