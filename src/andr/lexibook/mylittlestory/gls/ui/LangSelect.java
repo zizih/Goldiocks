@@ -13,12 +13,13 @@ import android.view.MotionEvent;
 @SuppressWarnings("deprecation")
 public class LangSelect extends BaseActivity{
 
-    private GifMovieView eng;
-    private GifMovieView fra;
-    private GifMovieView deu;
-    private GifMovieView esp;
-    private GifMovieView ita;
-    private GifMovieView girl;
+    private GifMovieView lang;
+//    private GifMovieView eng;
+//    private GifMovieView fra;
+//    private GifMovieView deu;
+//    private GifMovieView esp;
+//    private GifMovieView ita;
+//    private GifMovieView girl;
 
     private int[] eng_location;
     private int[] fra_location;
@@ -33,19 +34,21 @@ public class LangSelect extends BaseActivity{
         setMenuView(findViewById(R.id.any_widget_4_menu_lang));
 
         //init
-        eng = (GifMovieView) findViewById(R.id.gif_lang_eng);
-        fra = (GifMovieView) findViewById(R.id.gif_lang_fra);
-        deu = (GifMovieView) findViewById(R.id.gif_lang_deu);
-        esp = (GifMovieView) findViewById(R.id.gif_lang_esp);
-        ita = (GifMovieView) findViewById(R.id.gif_lang_ita);
-        girl = (GifMovieView) findViewById(R.id.gif_lang_girl);
+        lang = (GifMovieView) findViewById(R.id.gif_lang);
+//        eng = (GifMovieView) findViewById(R.id.gif_lang_eng);
+//        fra = (GifMovieView) findViewById(R.id.gif_lang_fra);
+//        deu = (GifMovieView) findViewById(R.id.gif_lang_deu);
+//        esp = (GifMovieView) findViewById(R.id.gif_lang_esp);
+//        ita = (GifMovieView) findViewById(R.id.gif_lang_ita);
+//        girl = (GifMovieView) findViewById(R.id.gif_lang_girl);
 
-        eng.setMovieAsset(getString(R.string.lang_eng_box));
-        fra.setMovieAsset(getString(R.string.lang_fra_box));
-        deu.setMovieAsset(getString(R.string.lang_deu_box));
-        esp.setMovieAsset(getString(R.string.lang_esp_box));
-        ita.setMovieAsset(getString(R.string.lang_ita_box));
-        girl.setMovieAsset(getString(R.string.lang_girl));
+        lang.setMovieAsset("gif/common/lang_box.gif");
+//        eng.setMovieAsset(getString(R.string.lang_eng_box));
+//        fra.setMovieAsset(getString(R.string.lang_fra_box));
+//        deu.setMovieAsset(getString(R.string.lang_deu_box));
+//        esp.setMovieAsset(getString(R.string.lang_esp_box));
+//        ita.setMovieAsset(getString(R.string.lang_ita_box));
+//        girl.setMovieAsset(getString(R.string.lang_girl));
 
         eng_location = getResources().getIntArray(R.array.lang_eng_location);
         fra_location = getResources().getIntArray(R.array.lang_fra_location);
@@ -80,12 +83,12 @@ public class LangSelect extends BaseActivity{
 
     @Override
     protected void onDestroy() {
-        eng.Clear();
-        fra.Clear();
-        deu.Clear();
-        esp.Clear();
-        ita.Clear();
-        girl.Clear();
+//        eng.Clear();
+//        fra.Clear();
+//        deu.Clear();
+//        esp.Clear();
+//        ita.Clear();
+//        girl.Clear();
         super.onDestroy();
     }
 }

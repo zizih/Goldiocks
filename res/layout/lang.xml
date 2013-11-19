@@ -11,34 +11,39 @@
           android:id="@+id/any_widget_4_menu_lang"/>
 
     <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_lang_eng"
+            android:id="@+id/gif_lang"
             android:layout_height="fill_parent"
             android:layout_width="fill_parent"
             />
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_lang_fra"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            />
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_lang_deu"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            />
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_lang_esp"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            />
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_lang_ita"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            />
-    <andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView
-            android:id="@+id/gif_lang_girl"
-            android:layout_height="fill_parent"
-            android:layout_width="fill_parent"
-            />
+    <!--<andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView-->
+            <!--android:id="@+id/gif_lang_eng"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--/>-->
+    <!--<andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView-->
+            <!--android:id="@+id/gif_lang_fra"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--/>-->
+    <!--<andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView-->
+            <!--android:id="@+id/gif_lang_deu"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--/>-->
+    <!--<andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView-->
+            <!--android:id="@+id/gif_lang_esp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--/>-->
+    <!--<andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView-->
+            <!--android:id="@+id/gif_lang_ita"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--/>-->
+    <!--<andr.lexibook.mylittlestory.gls.ui.ViewIml.GifMovieView-->
+            <!--android:id="@+id/gif_lang_girl"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--/>-->
 
 </AbsoluteLayout>
